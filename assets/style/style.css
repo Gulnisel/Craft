@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&family=Rubik+80s+Fade&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  line-height: normal;
+  font-size: 1.05rem;
+  font-family: "Raleway", sans-serif;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  right: 200px;
+  top: 0;
+  height: 200px;
+  z-index: 5;
+  min-width: 580px;
+}
+nav .logo {
+  position: relative;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px 0;
+  margin: 40px 0px 0px 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+nav .logo:hover {
+  color: #fff;
+}
+nav .links {
+  float: center;
+  position: relative;
+  text-align: center;
+  margin: 30px 0px 0px 0;
+  font-size: 1.05rem;
+}
+nav .links li {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+nav .links li > a {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+  height: 30px;
+  color: hsl(0, 1%, 70%);
+  text-align: center;
+}
+nav .links li > a:hover {
+  color: hsl(0, 1%, 70%);
+}
+nav .links li > a[class^=trigger-] {
+  padding-right: 60px;
+}
+nav .links li > a .arrow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 35%;
+  text-align: center;
+  right: 30px;
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3) transparent;
+}
+nav .links li > a .arrow:after {
+  content: "";
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  top: -10px;
+  left: -15px;
+  position: absolute;
+  height: 15px;
+}
+nav .links li ul {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(77, 3, 3, 0.15);
+  background-color: rgb(179, 179, 179);
+  display: none;
+}
+nav .links li ul > li {
+  clear: both;
+  list-style: none;
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+  width: 100%;
+  color: black;
+}
+nav .links li:hover > .drop {
+  display: block;
+  background-color: white;
+}
+nav .search-container {
+  width: 200px;
+  display: block;
+  position: relative;
+  margin: 0 0 0 1670px;
+  margin-bottom: 100px;
+}
+nav input#search-bar {
+  width: 100%;
+  margin-top: -60px;
+  height: 44px;
+  padding-left: 30px;
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+  border: 0px solid #D0CFCE;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+  color: #ffffff;
+  outline: none;
+}
+nav input#search-bar:focus {
+  border: 0 solid #ffffff;
+  transition: 0.35s ease;
+}
+nav input#search-bar:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+nav input#search-bar:focus::-moz-placeholder {
+  -moz-transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+nav input#search-bar:focus:-ms-placeholder {
+  -ms-transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+nav .search-icon {
+  position: relative;
+  float: left;
+  width: 20px;
+  height: 20px;
+  top: -35px;
+  left: -1px;
+  color: #fff;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 8;
+    transform: none;
+  }
+}
+body {
+  height: 123312px;
+}
+
+#introduction {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url(../images/hero_2.jpg.webp);
+  text-align: center;
+}
+#introduction .content {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+#introduction .content h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  margin-left: 0.5em;
+  margin-bottom: 1.5rem !important;
+}
+#introduction .content p {
+  color: #fff;
+}
+#introduction .content .watch-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+#who-we-are {
+  margin-top: 140px;
+  font-family: "Raleway", sans-serif;
+}
+#who-we-are .who-we-are-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+#who-we-are .who-we-are-content .who-we-are-left-content {
+  width: 475px;
+  height: 647.59px;
+  margin-bottom: 1.5rem !important;
+}
+#who-we-are .who-we-are-content .who-we-are-left-content .who {
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: #6c757d !important;
+}
+#who-we-are .who-we-are-content .who-we-are-left-content .divider {
+  width: 70px;
+  height: 6px;
+  background: #000;
+  display: inline-block;
+  position: relative;
+  transform: translateX(-50%);
+}
+#who-we-are .who-we-are-content .who-we-are-left-content h2 {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 2.1rem;
+  margin-top: 30px;
+}
+#who-we-are .who-we-are-content .who-we-are-left-content p {
+  color: #6c757d;
+  font-size: 1.05rem;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+#who-we-are .who-we-are-content .who-we-are-left-content a {
+  border: 2px solid #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 0px;
+  padding: 10px 20px;
+  color: #000;
+  margin-top: 1.5rem;
+}
+#who-we-are .who-we-are-content .who-we-are-right-content img {
+  width: 540px;
+  height: 679.59px;
+}/*# sourceMappingURL=style.css.map */
